@@ -12,7 +12,7 @@ print(last_page)
 
 with open('eggs.csv', 'w', encoding='utf-8'):
     pass
-g
+
 for i in range(last_page + 1):
     r = requests.get(f'https://www.aks.ua/catalog/displei-ekrany/page/{i}')
     html = Bs(r.content, 'lxml')
