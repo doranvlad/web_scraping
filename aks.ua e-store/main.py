@@ -26,7 +26,7 @@ for i in range(last_page + 1):
             code = t.find('div', class_='catalog-item-id catalog-bottom active old-price').text.strip()
             code = re.findall(r'\d+', code)[0]
 
-        href = 'https://www.aks.ua/' + t.find('a').get('href').strip()
+        href = 'https://www.aks.ua' + t.find('a').get('href').strip()
         price = t.find('div', class_='catalog-price-new').text.strip()
         price = re.findall(r'\d+', price)[0]
 
